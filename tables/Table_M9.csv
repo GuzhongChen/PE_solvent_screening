@@ -1,0 +1,11 @@
+Pair,Solvent,Measured PE (%),GP prediction (%),Prediction SD (pp)
+1,Chloroform,99.5,96.57,5.48
+1,Carbon tetrachloride,8,24.27,26.58
+2,"1,1,2,2-Tetrachloroethane",99.5,78.46,13.13
+2,Pentachloroethane,42.5,51.15,21.71
+3,"1,1,2,2-Tetrachloroethane",99.5,74.72,7.40
+3,Tetrachloroethene,0,16.78,25.64
+4,Formamide,75,17.05,24.82
+4,N-Methylformamide,0,17.10,24.82
+5,"1,1-Dichloroethane",90,85.48,5.93
+5,"1,2-Dichloroethane",90,85.48,5.93

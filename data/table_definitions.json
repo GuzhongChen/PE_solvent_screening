@@ -1,0 +1,406 @@
+{
+  "solvent_names": {
+    "75-09-2": "Dichloromethane",
+    "7732-18-5": "Water",
+    "67-68-5": "DMSO [Dimethylsulfoxide]",
+    "75-05-8": "Acetonitrile",
+    "64-18-6": "Formic Acid",
+    "105-58-8": "Diethyl Carbonate",
+    "108-29-2": "gamma-Valerolactone",
+    "75-12-7": "Formamide",
+    "141-62-8": "Decamethyltetrasiloxane",
+    "110-91-8": "Morpholine",
+    "110-01-0": "Tetrahydrothiophene",
+    "872-50-4": "N-methyl-2-pyrrolidone",
+    "67-64-1": "Acetone",
+    "112-27-6": "Triethylene Glycol",
+    "123-39-7": "N-Methylformamide",
+    "71-43-2": "Benzene",
+    "124-18-5": "Decane",
+    "108-90-7": "Chlorobenzene",
+    "108-94-1": "Cyclohexanone",
+    "287-92-3": "Cyclopentane",
+    "107-46-0": "Hexamethyldisiloxane",
+    "5614-37-9": "Cyclopentyl methyl ether",
+    "119-64-2": "Tetralin",
+    "75-15-0": "Carbon Disulfide",
+    "109-89-7": "Diethylamine",
+    "108-10-1": "Methyl isobutyl ketone",
+    "75-85-4": "2-Methylbutan-2-ol",
+    "107-83-5": "2-Methylpentane",
+    "68-12-2": "N,N-Dimethylformamide",
+    "680-31-9": "Hexamethylphosphoramide",
+    "75-34-3": "1,1-Dichloroethane",
+    "67-66-3": "Chloroform",
+    "107-06-2": "1,2-Dichloroethane",
+    "127-18-4": "Tetrachloroethene",
+    "56-23-5": "Carbon tetrachloride",
+    "71-55-6": "1,1,1-Trichloroethane",
+    "79-00-5": "1,1,2-Trichloroethane",
+    "79-34-5": "1,1,2,2-Tetrachloroethane",
+    "75-11-6": "Diiodomethane",
+    "107-15-3": "Ethylenediamine",
+    "76-01-7": "Pentachloroethane",
+    "111-69-3": "Adiponitrile",
+    "591-50-4": "Iodobenzene",
+    "102-76-1": "Triacetin",
+    "120-51-4": "Benzyl benzoate"
+  },
+  "tables": {
+    "M1": {
+      "caption": "Table M1. Experimental dataset of 45 solvents and measured PE conversion. Round 0 contains the 30 initial measurements; rounds 1–3 each contain five model-recommended solvents. Responses below 5% are encoded as zero; exactly 5% is retained.",
+      "headers": [
+        "ID",
+        "CAS",
+        "Solvent",
+        "PE conversion (%)",
+        "Round"
+      ]
+    },
+    "M3": {
+      "caption": "Table M3. Definitions of the molecular descriptors used for GP fitting and solvent selection. Rows 1–38 define molecular graph counts and functional-group matches; rows 39–40 define the two bond-presence indicators. SMARTS queries specify counted substructure matches.",
+      "headers": [
+        "Descriptor",
+        "Definition or SMARTS query"
+      ],
+      "rows": [
+        [
+          "n_C",
+          "Number of C atoms."
+        ],
+        [
+          "n_N",
+          "Number of N atoms."
+        ],
+        [
+          "n_O",
+          "Number of O atoms."
+        ],
+        [
+          "n_S",
+          "Number of S atoms."
+        ],
+        [
+          "n_P",
+          "Number of P atoms."
+        ],
+        [
+          "n_Si",
+          "Number of Si atoms."
+        ],
+        [
+          "n_F",
+          "Number of F atoms."
+        ],
+        [
+          "n_Cl",
+          "Number of Cl atoms."
+        ],
+        [
+          "n_Br",
+          "Number of Br atoms."
+        ],
+        [
+          "n_I",
+          "Number of I atoms."
+        ],
+        [
+          "Cl_sp3",
+          "Number of Cl atoms bonded to sp³-hybridized carbon."
+        ],
+        [
+          "Cl_sp2_nonaromatic",
+          "Number of Cl atoms bonded to nonaromatic sp²-hybridized carbon."
+        ],
+        [
+          "Cl_aryl",
+          "Number of Cl atoms bonded to aromatic carbon."
+        ],
+        [
+          "Br_sp3",
+          "Number of Br atoms bonded to sp³-hybridized carbon."
+        ],
+        [
+          "Br_sp2_nonaromatic",
+          "Number of Br atoms bonded to nonaromatic sp²-hybridized carbon."
+        ],
+        [
+          "Br_aryl",
+          "Number of Br atoms bonded to aromatic carbon."
+        ],
+        [
+          "I_sp3",
+          "Number of I atoms bonded to sp³-hybridized carbon."
+        ],
+        [
+          "I_sp2_nonaromatic",
+          "Number of I atoms bonded to nonaromatic sp²-hybridized carbon."
+        ],
+        [
+          "I_aryl",
+          "Number of I atoms bonded to aromatic carbon."
+        ],
+        [
+          "carbon_aromatic",
+          "Number of aromatic carbon atoms."
+        ],
+        [
+          "carbon_sp2_nonaromatic",
+          "Number of nonaromatic sp²-hybridized carbon atoms."
+        ],
+        [
+          "amide",
+          "[NX3][CX3](=[OX1])"
+        ],
+        [
+          "amide_NH2",
+          "[NX3H2][CX3](=[OX1])"
+        ],
+        [
+          "amide_NH1",
+          "[NX3H1][CX3](=[OX1])"
+        ],
+        [
+          "amide_NH0",
+          "[NX3H0][CX3](=[OX1])"
+        ],
+        [
+          "formyl_amide",
+          "[CX3H1](=[OX1])[NX3]"
+        ],
+        [
+          "primary_amine",
+          "[NX3H2;!$(N[C,S,P]=[O,S,N])]"
+        ],
+        [
+          "secondary_amine",
+          "[NX3H1;!$(N[C,S,P]=[O,S,N])]"
+        ],
+        [
+          "tertiary_amine",
+          "[NX3H0;!$(N[C,S,P]=[O,S,N])]"
+        ],
+        [
+          "alcohol",
+          "[OX2H][CX4]"
+        ],
+        [
+          "phenol",
+          "[OX2H]c"
+        ],
+        [
+          "ether",
+          "[OX2H0;!$([O][C,S,P]=[O,S,N])]([#6])[#6]"
+        ],
+        [
+          "carbonyl",
+          "[CX3]=[OX1]"
+        ],
+        [
+          "ester",
+          "[CX3](=[OX1])[OX2H0][#6]"
+        ],
+        [
+          "nitrile",
+          "[CX2]#[NX1]"
+        ],
+        [
+          "sulfoxide",
+          "[#16X3]=[OX1]"
+        ],
+        [
+          "sulfone",
+          "[#16X4](=[OX1])=[OX1]"
+        ],
+        [
+          "aromatic_nitrogen",
+          "[n]"
+        ],
+        [
+          "Q01 (H_available)",
+          "1 if any carbon has at least one bonded H; otherwise 0."
+        ],
+        [
+          "Q03 (X_available)",
+          "1 if carbon is bonded to Cl, Br or I; otherwise 0."
+        ]
+      ]
+    },
+    "M4": {
+      "caption": "Table M4. GP model fitting and parameter settings. Inputs and responses are scaled using the training solvents. The fit with the lowest finite objective value from six starting points is retained; ν is observation-noise variance and 5/2 is Matérn smoothness.",
+      "headers": [
+        "Quantity",
+        "Bounds or method",
+        "Setting"
+      ],
+      "rows": [
+        [
+          "Kernel variance a",
+          "10⁻³ to 10³",
+          "Initial 1"
+        ],
+        [
+          "Common length ℓ",
+          "0.01 to 100",
+          "Initial 1"
+        ],
+        [
+          "Noise variance ν",
+          "10⁻⁴ to 4",
+          "Initial 0.1"
+        ],
+        [
+          "Intercept",
+          "Generalized least squares",
+          "Training estimate"
+        ],
+        [
+          "Objective",
+          "Restricted marginal likelihood",
+          "Float64"
+        ],
+        [
+          "Optimization",
+          "L-BFGS-B",
+          "Seed 20260812"
+        ],
+        [
+          "Starting points",
+          "One fixed + five random",
+          "6 total"
+        ],
+        [
+          "Iterations per start",
+          "Maximum 250",
+          ""
+        ],
+        [
+          "Stopping tolerances",
+          "ftol = 10⁻⁹, gtol = 10⁻⁶",
+          ""
+        ],
+        [
+          "Jitter",
+          "10⁻⁸",
+          "Normalized scale"
+        ]
+      ]
+    },
+    "M5": {
+      "caption": "Table M5. Model settings tested for the eight regression methods. Settings are selected by three-fold cross-validation within each 36-solvent training set.",
+      "headers": [
+        "Model",
+        "Tested or fixed parameter values",
+        "Parameter sets tested"
+      ],
+      "rows": [
+        [
+          "Decision tree",
+          "depth = 2, 4, unrestricted; minimum leaf size = 1, 2, 4.",
+          "9"
+        ],
+        [
+          "Extra trees",
+          "50 trees; feature fraction = 0.5, 1.0; minimum leaf size = 1, 2, 4; no bootstrap.",
+          "6"
+        ],
+        [
+          "Gradient boosting",
+          "100 trees; learning rate = 0.05, 0.1; maximum tree depth = 1, 2, 3.",
+          "6"
+        ],
+        [
+          "k-nearest neighbors",
+          "Neighbors = 3, 5, 7, 9; weights = uniform, inverse-distance.",
+          "8"
+        ],
+        [
+          "Kernel ridge (linear)",
+          "Linear kernel; alpha = 0.01, 0.1, 1, 10, 100.",
+          "5"
+        ],
+        [
+          "Linear support vector",
+          "C = 0.1, 1, 10, 100; epsilon = 0, 0.1; linear epsilon-insensitive loss.",
+          "8"
+        ],
+        [
+          "Random forest",
+          "50 trees; feature fraction = 0.5, 1.0; minimum leaf size = 1, 2, 4; bootstrap.",
+          "6"
+        ],
+        [
+          "Ridge",
+          "alpha = 0.01, 0.1, 1, 10, 100.",
+          "5"
+        ]
+      ]
+    },
+    "M6": {
+      "caption": "Table M6. Prediction accuracy of the GP and eight regression methods using the same descriptors and training/test solvent groups. Values are means over ten repeats of five-fold cross-validation on the 45 measured solvents; parameters for the comparison models are selected within each training set. RMSE ± SD gives the mean and sample standard deviation. Errors are in percentage points (pp). Linear kernel ridge regression and ridge regression give equivalent predictions.",
+      "headers": [
+        "Model",
+        "RMSE ± SD (pp)",
+        "MAE (pp)",
+        "R²"
+      ]
+    },
+    "M7": {
+      "caption": "Table M7. Solvents selected in three experimental rounds, listed in recommendation order. GP means are calculated before selecting each batch. SD of the predicted mean and EI are calculated at each selection after accounting for correlations with solvents already selected in that batch. All five solvents are selected before their PE conversions are measured. SD and EI are in percentage points.",
+      "headers": [
+        "Round",
+        "Order",
+        "Solvent",
+        "Measured PE (%)",
+        "GP mean (%)",
+        "SD of mean (pp)",
+        "EI (pp)"
+      ]
+    },
+    "M8": {
+      "caption": "Table M8. Prediction accuracy with 18, 27 and 36 training solvents. Within each training/test split, every larger training set contains all solvents from the smaller set, and all three models predict the same nine test solvents. Values are means across ten complete repeats; ± denotes sample SD. RMSE and MAE are in percentage points.",
+      "headers": [
+        "Training solvents (n)",
+        "R²",
+        "RMSE ± SD (pp)",
+        "MAE ± SD (pp)"
+      ]
+    },
+    "M9": {
+      "caption": "Table M9. Predictions for pairs of solvents excluded from model fitting. For each pair, the GP is fitted to the measured conversions of the other 43 solvents and then predicts the two excluded solvents. Measured and predicted conversions are in percent. Prediction SD is the standard deviation for a measured conversion, including observation noise, and is in percentage points. Pair differences are defined in Section M8.",
+      "headers": [
+        "Pair",
+        "Solvent",
+        "Measured PE (%)",
+        "GP prediction (%)",
+        "Prediction SD (pp)"
+      ]
+    },
+    "M10": {
+      "caption": "Table M10. Mean absolute contribution of each descriptor group to predicted conversion. For each solvent, signed Shapley contributions are averaged over ten models fitted without that solvent’s measured conversion. The absolute values of these solvent means are then averaged across all 45 solvents. Contributions are in percentage points relative to the background prediction defined in Section M9. All 2⁴=16 combinations of the four descriptor groups are evaluated. Descriptor numbers follow the order of the entries in Table M3.",
+      "headers": [
+        "Descriptor group",
+        "Descriptors",
+        "Mean absolute contribution (pp)"
+      ],
+      "row_labels": [
+        [
+          "Element counts",
+          "1–10"
+        ],
+        [
+          "Carbon bonding and halogen environments",
+          "11–21"
+        ],
+        [
+          "Donor and functional groups",
+          "22–38"
+        ],
+        [
+          "C–H/C–X bond-presence indicators",
+          "Q01, Q03"
+        ]
+      ]
+    }
+  }
+}

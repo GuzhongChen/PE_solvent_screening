@@ -1,0 +1,42 @@
+[
+  {
+    "pair": "Chloromethane substitution",
+    "log_parameters": {
+      "variance_D": -0.42679325925257766,
+      "length_D": -1.1450227323950828,
+      "noise_variance": -6.391533063353611
+    }
+  },
+  {
+    "pair": "C2 chlorination",
+    "log_parameters": {
+      "variance_D": -0.42017746866814176,
+      "length_D": -0.7889661238495546,
+      "noise_variance": -6.054103407896601
+    }
+  },
+  {
+    "pair": "C2 saturation",
+    "log_parameters": {
+      "variance_D": -0.47648090548045197,
+      "length_D": -0.8747893011065082,
+      "noise_variance": -6.22414988746566
+    }
+  },
+  {
+    "pair": "Amide N substitution",
+    "log_parameters": {
+      "variance_D": -0.636861526144221,
+      "length_D": -1.2197981969103928,
+      "noise_variance": -6.465096116297728
+    }
+  },
+  {
+    "pair": "Dichloroethane isomers",
+    "log_parameters": {
+      "variance_D": -0.42032626604562323,
+      "length_D": -1.238277082283027,
+      "noise_variance": -5.917819804960847
+    }
+  }
+]

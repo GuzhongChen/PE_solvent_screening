@@ -1,0 +1,17 @@
+Table M1. Experimental dataset of 45 solvents and measured PE conversion. Round 0 contains the 30 initial measurements; rounds 1–3 each contain five model-recommended solvents. Responses below 5% are encoded as zero; exactly 5% is retained.
+
+Table M3. Definitions of the molecular descriptors used for GP fitting and solvent selection. Rows 1–38 define molecular graph counts and functional-group matches; rows 39–40 define the two bond-presence indicators. SMARTS queries specify counted substructure matches.
+
+Table M4. GP model fitting and parameter settings. Inputs and responses are scaled using the training solvents. The fit with the lowest finite objective value from six starting points is retained; ν is observation-noise variance and 5/2 is Matérn smoothness.
+
+Table M5. Model settings tested for the eight regression methods. Settings are selected by three-fold cross-validation within each 36-solvent training set.
+
+Table M6. Prediction accuracy of the GP and eight regression methods using the same descriptors and training/test solvent groups. Values are means over ten repeats of five-fold cross-validation on the 45 measured solvents; parameters for the comparison models are selected within each training set. RMSE ± SD gives the mean and sample standard deviation. Errors are in percentage points (pp). Linear kernel ridge regression and ridge regression give equivalent predictions.
+
+Table M7. Solvents selected in three experimental rounds, listed in recommendation order. GP means are calculated before selecting each batch. SD of the predicted mean and EI are calculated at each selection after accounting for correlations with solvents already selected in that batch. All five solvents are selected before their PE conversions are measured. SD and EI are in percentage points.
+
+Table M8. Prediction accuracy with 18, 27 and 36 training solvents. Within each training/test split, every larger training set contains all solvents from the smaller set, and all three models predict the same nine test solvents. Values are means across ten complete repeats; ± denotes sample SD. RMSE and MAE are in percentage points.
+
+Table M9. Predictions for pairs of solvents excluded from model fitting. For each pair, the GP is fitted to the measured conversions of the other 43 solvents and then predicts the two excluded solvents. Measured and predicted conversions are in percent. Prediction SD is the standard deviation for a measured conversion, including observation noise, and is in percentage points. Pair differences are defined in Section M8.
+
+Table M10. Mean absolute contribution of each descriptor group to predicted conversion. For each solvent, signed Shapley contributions are averaged over ten models fitted without that solvent’s measured conversion. The absolute values of these solvent means are then averaged across all 45 solvents. Contributions are in percentage points relative to the background prediction defined in Section M9. All 2⁴=16 combinations of the four descriptor groups are evaluated. Descriptor numbers follow the order of the entries in Table M3.

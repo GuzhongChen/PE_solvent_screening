@@ -1,0 +1,41 @@
+Descriptor,Definition or SMARTS query
+n_C,Number of C atoms.
+n_N,Number of N atoms.
+n_O,Number of O atoms.
+n_S,Number of S atoms.
+n_P,Number of P atoms.
+n_Si,Number of Si atoms.
+n_F,Number of F atoms.
+n_Cl,Number of Cl atoms.
+n_Br,Number of Br atoms.
+n_I,Number of I atoms.
+Cl_sp3,Number of Cl atoms bonded to sp³-hybridized carbon.
+Cl_sp2_nonaromatic,Number of Cl atoms bonded to nonaromatic sp²-hybridized carbon.
+Cl_aryl,Number of Cl atoms bonded to aromatic carbon.
+Br_sp3,Number of Br atoms bonded to sp³-hybridized carbon.
+Br_sp2_nonaromatic,Number of Br atoms bonded to nonaromatic sp²-hybridized carbon.
+Br_aryl,Number of Br atoms bonded to aromatic carbon.
+I_sp3,Number of I atoms bonded to sp³-hybridized carbon.
+I_sp2_nonaromatic,Number of I atoms bonded to nonaromatic sp²-hybridized carbon.
+I_aryl,Number of I atoms bonded to aromatic carbon.
+carbon_aromatic,Number of aromatic carbon atoms.
+carbon_sp2_nonaromatic,Number of nonaromatic sp²-hybridized carbon atoms.
+amide,[NX3][CX3](=[OX1])
+amide_NH2,[NX3H2][CX3](=[OX1])
+amide_NH1,[NX3H1][CX3](=[OX1])
+amide_NH0,[NX3H0][CX3](=[OX1])
+formyl_amide,[CX3H1](=[OX1])[NX3]
+primary_amine,"[NX3H2;!$(N[C,S,P]=[O,S,N])]"
+secondary_amine,"[NX3H1;!$(N[C,S,P]=[O,S,N])]"
+tertiary_amine,"[NX3H0;!$(N[C,S,P]=[O,S,N])]"
+alcohol,[OX2H][CX4]
+phenol,[OX2H]c
+ether,"[OX2H0;!$([O][C,S,P]=[O,S,N])]([#6])[#6]"
+carbonyl,[CX3]=[OX1]
+ester,[CX3](=[OX1])[OX2H0][#6]
+nitrile,[CX2]#[NX1]
+sulfoxide,[#16X3]=[OX1]
+sulfone,[#16X4](=[OX1])=[OX1]
+aromatic_nitrogen,[n]
+Q01 (H_available),1 if any carbon has at least one bonded H; otherwise 0.
+Q03 (X_available),"1 if carbon is bonded to Cl, Br or I; otherwise 0."

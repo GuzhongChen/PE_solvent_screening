@@ -1,0 +1,9 @@
+Model,Tested or fixed parameter values,Parameter sets tested
+Decision tree,"depth = 2, 4, unrestricted; minimum leaf size = 1, 2, 4.",9
+Extra trees,"50 trees; feature fraction = 0.5, 1.0; minimum leaf size = 1, 2, 4; no bootstrap.",6
+Gradient boosting,"100 trees; learning rate = 0.05, 0.1; maximum tree depth = 1, 2, 3.",6
+k-nearest neighbors,"Neighbors = 3, 5, 7, 9; weights = uniform, inverse-distance.",8
+Kernel ridge (linear),"Linear kernel; alpha = 0.01, 0.1, 1, 10, 100.",5
+Linear support vector,"C = 0.1, 1, 10, 100; epsilon = 0, 0.1; linear epsilon-insensitive loss.",8
+Random forest,"50 trees; feature fraction = 0.5, 1.0; minimum leaf size = 1, 2, 4; bootstrap.",6
+Ridge,"alpha = 0.01, 0.1, 1, 10, 100.",5

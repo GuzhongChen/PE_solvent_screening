@@ -1,0 +1,19 @@
+{
+  "amide": "[NX3][CX3](=[OX1])",
+  "amide_NH2": "[NX3H2][CX3](=[OX1])",
+  "amide_NH1": "[NX3H1][CX3](=[OX1])",
+  "amide_NH0": "[NX3H0][CX3](=[OX1])",
+  "formyl_amide": "[CX3H1](=[OX1])[NX3]",
+  "primary_amine": "[NX3H2;!$(N[C,S,P]=[O,S,N])]",
+  "secondary_amine": "[NX3H1;!$(N[C,S,P]=[O,S,N])]",
+  "tertiary_amine": "[NX3H0;!$(N[C,S,P]=[O,S,N])]",
+  "alcohol": "[OX2H][CX4]",
+  "phenol": "[OX2H]c",
+  "ether": "[OX2H0;!$([O][C,S,P]=[O,S,N])]([#6])[#6]",
+  "carbonyl": "[CX3]=[OX1]",
+  "ester": "[CX3](=[OX1])[OX2H0][#6]",
+  "nitrile": "[CX2]#[NX1]",
+  "sulfoxide": "[#16X3]=[OX1]",
+  "sulfone": "[#16X4](=[OX1])=[OX1]",
+  "aromatic_nitrogen": "[n]"
+}

@@ -1,0 +1,10 @@
+{
+  "batch": 3,
+  "parameters": {
+    "log_parameters": {
+      "variance_D": -0.25847619940579447,
+      "length_D": -0.4126259583969179,
+      "noise_variance": -5.935009624921045
+    }
+  }
+}

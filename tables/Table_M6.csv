@@ -1,0 +1,10 @@
+Model,RMSE ± SD (pp),MAE (pp),R²
+Matérn GP,19.53 ± 1.14,14.20,0.663
+Decision tree,27.02 ± 2.42,18.72,0.353
+Extra trees,25.05 ± 1.60,17.63,0.446
+Gradient boosting,25.66 ± 0.98,18.42,0.420
+k-nearest neighbors,26.24 ± 1.22,18.91,0.393
+"Kernel ridge, linear",28.92 ± 1.92,22.77,0.261
+Linear support vector,28.91 ± 0.95,20.62,0.264
+Random forest,24.11 ± 1.66,17.03,0.486
+Ridge,28.92 ± 1.92,22.77,0.261

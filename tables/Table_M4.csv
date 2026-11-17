@@ -1,0 +1,11 @@
+Quantity,Bounds or method,Setting
+Kernel variance a,10⁻³ to 10³,Initial 1
+Common length ℓ,0.01 to 100,Initial 1
+Noise variance ν,10⁻⁴ to 4,Initial 0.1
+Intercept,Generalized least squares,Training estimate
+Objective,Restricted marginal likelihood,Float64
+Optimization,L-BFGS-B,Seed 20260812
+Starting points,One fixed + five random,6 total
+Iterations per start,Maximum 250,
+Stopping tolerances,"ftol = 10⁻⁹, gtol = 10⁻⁶",
+Jitter,10⁻⁸,Normalized scale
